@@ -1,0 +1,23 @@
+### Create a ticket
+POST http://localhost:8000/tickets HTTP/1.1
+Content-Type: application/json
+
+{
+    "ticket_id": "LOL-808", 
+    "title": "Important ticket.",
+    "status": "To Do"
+}
+
+### Create one more ticket
+POST http://localhost:8000/tickets HTTP/1.1
+Content-Type: application/json
+
+{
+    "ticket_id": "LOL-101", 
+    "title": "The Urgent ticket.",
+    "status": "99% done"
+}
+
+### List all tickets
+GET  http://localhost:8000/tickets HTTP/1.1
+Content-Type: application/json

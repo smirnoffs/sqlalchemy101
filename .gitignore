@@ -1,0 +1,4 @@
+.venv
+.vscode
+tickets.db
+*.pyc
